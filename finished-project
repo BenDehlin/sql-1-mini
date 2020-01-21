@@ -5,7 +5,7 @@ SELECT name, composer, milliseconds FROM track
 SELECT count(*) FROM track WHERE milliseconds > 299000;
 SELECT AVG(milliseconds) FROM track;
 SELECT COUNT(*) FROM invoice WHERE billing_country = 'USA';
-SELECT * FROM customer WHERE SUBSTR(first_name, 1) LIKE 'a';
+SELECT first_name from customer WHERE first_name LIKE '%a%';
 SELECT * FROM track ORDER BY milliseconds DESC LIMIT 10;
 SELECT * FROM track ORDER BY milliseconds LIMIT 20;
 SELECT * FROM customer WHERE state = 'CA' OR state = 'WA';
